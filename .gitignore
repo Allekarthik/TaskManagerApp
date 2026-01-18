@@ -73,3 +73,10 @@ yarn-error.log
 !.yarn/releases
 !.yarn/sdks
 !.yarn/versions
+
+
+.gradle
+/local.properties
+/.idea
+/build
+*.iml
