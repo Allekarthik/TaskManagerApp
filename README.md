@@ -1,97 +1,260 @@
-This is a new [**React Native**](https://reactnative.dev) project, bootstrapped using [`@react-native-community/cli`](https://github.com/react-native-community/cli).
+ 📱 Task Manager  React Native Mobile Application
 
-# Getting Started
+ 🌟 Overview
 
-> **Note**: Make sure you have completed the [Set Up Your Environment](https://reactnative.dev/docs/set-up-your-environment) guide before proceeding.
+A featurerich, crossplatform task management mobile application built with React Native and TypeScript. This app helps users organize their daily tasks with calendar integration, categorybased filtering, and visual analytics to track productivity.
 
-## Step 1: Start Metro
 
-First, you will need to run **Metro**, the JavaScript build tool for React Native.
 
-To start the Metro dev server, run the following command from the root of your React Native project:
+ ✨ Features
 
-```sh
-# Using npm
-npm start
+ 📋 Task Management
+ ✅ Create, view, and manage tasks with intuitive UI
+ ✅ Mark tasks as complete/incomplete with single tap
+ ✅ Categorybased organization (Work, Personal, Birthday)
+ ✅ Datespecific task scheduling
+ ✅ Realtime filtering (All, Pending, Completed)
 
-# OR using Yarn
-yarn start
+ 📅 Calendar Integration
+ ✅ Interactive monthly calendar view
+ ✅ Visual task indicators on calendar dates
+ ✅ Smooth month navigation with animations
+ ✅ Quick task creation from selected dates
+ ✅ Longpress gesture to navigate to task details
+
+ 📊 Analytics Dashboard
+ ✅ Weekly task completion statistics
+ ✅ Custom bar charts showing daily productivity
+ ✅ Categorywise task breakdown
+ ✅ Completed vs Pending task counters
+ ✅ Current week summary
+
+ 🎨 User Experience
+ ✅ Clean and modern Material Design UI
+ ✅ Smooth animations and transitions
+ ✅ Custom bottom tab navigation
+ ✅ Floating Action Button for quick access
+ ✅ Empty state handling with friendly messages
+ ✅ Responsive layout with Flexbox
+
+
+
+ 🛠️ Tech Stack
+
+ Frontend Framework
+ React Native 0.72+
+ TypeScript
+ React Navigation v6
+
+ State Management
+ React Context API
+ Custom Hooks (useTasks)
+
+ Storage
+ AsyncStorage for persistent local data
+
+ UI Components
+ React Native Paper (Material Design)
+ Custom components
+ Animated API for smooth transitions
+
+
+
+ 📁 Project Structure
+ 
+TaskManagerApp/
+│
+├── App.tsx                  Main entry point
+├── WelcomeScreen.tsx        Splash screen with autonavigation
+├── MainTabs.tsx             Bottom tab navigation
+│
+├── TaskContext.tsx          Global state management
+│
+├── TaskListScreen.tsx       Main task management screen
+├── CalendarScreen.tsx       Interactive calendar view
+├── MineScreen.tsx           Analytics dashboard
+│
+├── AuthContext.tsx          Authentication context (future use)
+└── EditTaskScreen.tsx       Task editing functionality
 ```
 
-## Step 2: Build and run your app
 
-With Metro running, open a new terminal window/pane from the root of your React Native project, and use one of the following commands to build and run your Android or iOS app:
 
-### Android
+ Key Technical Implementations
 
-```sh
-# Using npm
-npm run android
+ 1. Context API for State Management
+ Global task state accessible across all screens
+ Custom `useTasks()` hook for easy consumption
+ Automatic persistence with AsyncStorage
 
-# OR using Yarn
-yarn android
+ 2. Custom Calendar Logic
+ Dynamic month grid generation
+ First day calculation for proper alignment
+ Datebased task filtering and display
+ Timezonesafe date parsing
+
+ 3. Advanced React Hooks
+```typescript
+useState     Local component state
+useEffect    Side effects & data loading
+useContext   Global state consumption
+useRef       Animation value persistence
 ```
 
-### iOS
+ 4. Navigation Patterns
+ Stack Navigator for screen hierarchy
+ Tab Navigator for main app sections
+ Parameter passing between screens
+ Custom tab bar with active state styling
 
-For iOS, remember to install CocoaPods dependencies (this only needs to be run on first clone or after updating native deps).
+ 5. Performance Optimizations
+ FlatList with keyExtractor for efficient rendering
+ Cleanup functions to prevent memory leaks
+ useNativeDriver for 60fps animations
+ Conditional rendering for empty states
 
-The first time you create a new project, run the Ruby bundler to install CocoaPods itself:
+ 6. Data Visualization
+ Custom bar chart implementation
+ Dynamic height calculations based on max value
+ Weekly aggregation logic
+ Categorywise grouping
 
-```sh
-bundle install
+
+
+ Screenshots
+
+ 
+<img width="720" height="1600" alt="image" src="https://github.com/user-attachments/assets/bbd5f284-8e60-43a2-9320-69884b70ebe3" />
+<img width="720" height="1600" alt="image" src="https://github.com/user-attachments/assets/75e0874c-0a67-467e-b386-d6ff48bea9f6" />
+<img width="720" height="1600" alt="image" src="https://github.com/user-attachments/assets/8a085b9b-136c-44ae-9a51-b8785ee967a9" />
+<img width="720" height="1903" alt="image" src="https://github.com/user-attachments/assets/a61ed1c6-9637-43b9-ab0a-095cdfb3ad05" />
+
+
+Video
+
+
+
+
+
+
+
+ 🎯 Learning Outcomes
+
+This project demonstrates proficiency in:
+
+✅ React Native Development  Crossplatform mobile app creation  
+✅ TypeScript  Typesafe JavaScript for better code quality  
+✅ State Management  Context API with custom hooks  
+✅ Navigation  Complex navigation patterns  
+✅ Animations  Smooth UI transitions  
+✅ Data Persistence  Local storage implementation  
+✅ Date/Time Logic  Calendar calculations and formatting  
+✅ Array Manipulation  Advanced filtering, sorting, mapping  
+✅ Component Design  Reusable, modular architecture  
+✅ Performance  Optimization techniques for smooth UX  
+
+
+
+ 🔧 Installation & Setup
+
+ Prerequisites
+ Node.js (v14 or higher)
+ npm or yarn
+ React Native CLI
+ Android Studio / Xcode (for emulator)
+
+ Steps
+
+```bash
+ Clone the repository
+git clone https://github.com/Allekarthik/TaskManagerApp.git
+
+ Navigate to project directory
+cd TaskManagerApp
+
+ Install dependencies
+npm install
+
+ Install iOS dependencies (Mac only)
+cd ios && pod install && cd ..
+
+ Run on Android
+npx reactnative runandroid
+
+ Run on iOS (Mac only)
+npx reactnative runios
 ```
 
-Then, and every time you update your native dependencies, run:
 
-```sh
-bundle exec pod install
+
+ 📦 Dependencies
+
+```json
+{
+  "react": "18.2.0",
+  "reactnative": "0.72.0",
+  "reactnavigation": "^6.x",
+  "@reactnavigation/native": "^6.x",
+  "@reactnavigation/bottomtabs": "^6.x",
+  "@reactnavigation/nativestack": "^6.x",
+  "reactnativepaper": "^5.x",
+  "@reactnativeasyncstorage/asyncstorage": "^1.x",
+  "typescript": "^5.x"
+}
 ```
 
-For more information, please visit [CocoaPods Getting Started guide](https://guides.cocoapods.org/using/getting-started.html).
 
-```sh
-# Using npm
-npm run ios
 
-# OR using Yarn
-yarn ios
+ 🎨 App Flow
+
+```
+App Launch
+    ↓
+Welcome Screen (3 sec splash)
+    ↓
+Main Tabs
+    ↓
+┌─────────┬──────────┬─────────┐
+│  Tasks  │ Calendar │  Mine   │
+└─────────┴──────────┴─────────┘
 ```
 
-If everything is set up correctly, you should see your new app running in the Android Emulator, iOS Simulator, or your connected device.
 
-This is one way to run your app — you can also build it directly from Android Studio or Xcode.
 
-## Step 3: Modify your app
+ 🔥 Features in Detail
 
-Now that you have successfully run the app, let's make changes!
+ Task Management
+ Add Tasks: Simple input with category selection
+ Toggle Completion: Tap to mark complete/incomplete
+ Filter Options: View All, Pending, or Completed tasks
+ Persistent Storage: Tasks saved locally on device
 
-Open `App.tsx` in your text editor of choice and make some changes. When you save, your app will automatically update and reflect these changes — this is powered by [Fast Refresh](https://reactnative.dev/docs/fast-refresh).
+ Calendar View
+ Monthly Display: Full calendar grid with task indicators
+ Task Icons: Visual representation of tasks on dates
+ Date Selection: Tap to view tasks for specific date
+ Navigation: Smooth animated month transitions
+ Quick Add: Longpress to add task for selected date
 
-When you want to forcefully reload, for example to reset the state of your app, you can perform a full reload:
+ Analytics Dashboard
+ Weekly Stats: Completed vs Pending task counts
+ Visual Charts: Bar graph showing daily completions
+ Category Breakdown: Pending tasks grouped by type
+ Summary Cards: Quick overview of weekly performance
 
-- **Android**: Press the <kbd>R</kbd> key twice or select **"Reload"** from the **Dev Menu**, accessed via <kbd>Ctrl</kbd> + <kbd>M</kbd> (Windows/Linux) or <kbd>Cmd ⌘</kbd> + <kbd>M</kbd> (macOS).
-- **iOS**: Press <kbd>R</kbd> in iOS Simulator.
 
-## Congratulations! :tada:
+ 👨‍💻 Developer
 
-You've successfully run and modified your React Native App. :partying_face:
+Alle Karthik
 
-### Now what?
+ GitHub: [@Allekarthik](https://github.com/Allekarthik)
+ Project: [TaskManagerApp](https://github.com/Allekarthik/TaskManagerApp)
 
-- If you want to add this new React Native code to an existing application, check out the [Integration guide](https://reactnative.dev/docs/integration-with-existing-apps).
-- If you're curious to learn more about React Native, check out the [docs](https://reactnative.dev/docs/getting-started).
 
-# Troubleshooting
 
-If you're having issues getting the above steps to work, see the [Troubleshooting](https://reactnative.dev/docs/troubleshooting) page.
+ 🤝 Contributing
 
-# Learn More
+Contributions, issues, and feature requests are welcome!
 
-To learn more about React Native, take a look at the following resources:
+Feel free to check the [issues page](https://github.com/Allekarthik/TaskManagerApp/issues).
 
-- [React Native Website](https://reactnative.dev) - learn more about React Native.
-- [Getting Started](https://reactnative.dev/docs/environment-setup) - an **overview** of React Native and how setup your environment.
-- [Learn the Basics](https://reactnative.dev/docs/getting-started) - a **guided tour** of the React Native **basics**.
-- [Blog](https://reactnative.dev/blog) - read the latest official React Native **Blog** posts.
-- [`@facebook/react-native`](https://github.com/facebook/react-native) - the Open Source; GitHub **repository** for React Native.
