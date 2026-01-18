@@ -9,33 +9,58 @@ A featurerich, crossplatform task management mobile application built with React
  ✨ Features
 
  📋 Task Management
+ 
  ✅ Create, view, and manage tasks with intuitive UI
+ 
  ✅ Mark tasks as complete/incomplete with single tap
+ 
  ✅ Categorybased organization (Work, Personal, Birthday)
+ 
  ✅ Datespecific task scheduling
+ 
  ✅ Realtime filtering (All, Pending, Completed)
+ 
 
  📅 Calendar Integration
+ 
  ✅ Interactive monthly calendar view
+ 
  ✅ Visual task indicators on calendar dates
+ 
  ✅ Smooth month navigation with animations
+ 
  ✅ Quick task creation from selected dates
+ 
  ✅ Longpress gesture to navigate to task details
+ 
 
  📊 Analytics Dashboard
+ 
  ✅ Weekly task completion statistics
+ 
  ✅ Custom bar charts showing daily productivity
+ 
  ✅ Categorywise task breakdown
+ 
  ✅ Completed vs Pending task counters
+ 
  ✅ Current week summary
+ 
 
  🎨 User Experience
+ 
  ✅ Clean and modern Material Design UI
+ 
  ✅ Smooth animations and transitions
+ 
  ✅ Custom bottom tab navigation
+ 
  ✅ Floating Action Button for quick access
+ 
  ✅ Empty state handling with friendly messages
+ 
  ✅ Responsive layout with Flexbox
+ 
 
 
 
