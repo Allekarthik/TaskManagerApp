@@ -149,10 +149,10 @@ useRef       Animation value persistence
  Screenshots
 
  
-<img width="720" height="1600" alt="image" src="https://github.com/user-attachments/assets/bbd5f284-8e60-43a2-9320-69884b70ebe3" />
-<img width="720" height="1600" alt="image" src="https://github.com/user-attachments/assets/75e0874c-0a67-467e-b386-d6ff48bea9f6" />
-<img width="720" height="1600" alt="image" src="https://github.com/user-attachments/assets/8a085b9b-136c-44ae-9a51-b8785ee967a9" />
-<img width="720" height="1903" alt="image" src="https://github.com/user-attachments/assets/a61ed1c6-9637-43b9-ab0a-095cdfb3ad05" />
+<img width="450" height="450" alt="image" src="https://github.com/user-attachments/assets/bbd5f284-8e60-43a2-9320-69884b70ebe3" />
+<img width="450" height="450" alt="image" src="https://github.com/user-attachments/assets/75e0874c-0a67-467e-b386-d6ff48bea9f6" />
+<img width="450" height="450" alt="image" src="https://github.com/user-attachments/assets/8a085b9b-136c-44ae-9a51-b8785ee967a9" />
+<img width="450" height="450" alt="image" src="https://github.com/user-attachments/assets/a61ed1c6-9637-43b9-ab0a-095cdfb3ad05" />
 
 
 Video
